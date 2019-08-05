@@ -1,0 +1,128 @@
+body {
+    background-image: url('../img/coffee.jpg');
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+body .logo{
+    float:left;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+    background-color: dimgrey;
+    font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:10px;
+    font-weight:bold;
+    color:whitesmoke;
+}
+
+body #header{
+    background-color: slategray;
+    line-height: 10px;
+}
+
+.menubar{
+    border:none;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.menubar ul{
+    background: dimgray;
+    height:50px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position : absolute;
+    left : 120px;
+    top: 20px;
+}
+
+.menubar li{
+    float:left;
+    padding:0px;
+}
+
+.menubar li a{
+    background: dimgray;
+    color:white;
+    display:block;
+    font-weight:normal;
+    line-height:50px;
+    margin:0px;
+    padding:0px 25px;
+    text-align:center;
+    text-decoration:none;
+}
+
+.menubar li a:hover, .menubar ul li:hover a{
+    background: darkgrey;
+    color:#FFFFFF;
+    text-decoration:none;
+}
+
+.menubar li ul{
+    background: dimgray;
+    display:none; /* 평상시에는 드랍메뉴가 안보이게 하기 */
+    height:auto;
+    padding:0px;
+    margin:0px;
+    border:0px;
+    position:absolute;
+    width:200px;
+    z-index:200;
+    /*top:1em;
+    /*left:0;*/
+}
+
+.menubar li:hover ul{
+    display:block; /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+}
+
+.menubar li li {
+    background: dimgray;
+    display:block;
+    float:none;
+    margin:0px;
+    padding:0px;
+    width:200px;
+}
+
+.menubar li:hover li a{
+    background:none;
+}
+
+.menubar li ul a{
+    display:block;
+    height:50px;
+    font-size:12px;
+    font-style:normal;
+    margin:0px;
+    padding:0px 10px 0px 15px;
+    text-align:left;
+}
+
+.menubar li ul a:hover, .menubar li ul li:hover a{
+    background: darkgrey;
+    border:0px;
+    color:white;
+    text-decoration:none;
+}
+
+.menubar p{
+    clear:left;
+}
+
+.menubar ul li input{
+    width:50px;
+    height: 50px;
+}
